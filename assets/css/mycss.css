@@ -1,9 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+
 :root{
-    --text: #090806;
-    --background: #fcfbfa;
-    --primary: #e5af24;
-    --secondary: #388799;
-    --accent: #64afdd;   
+    --margin-lg: 0 12%;
+    --margin-md: 0 6%;
+    --border1: 1rem;
+    --border05: 0.5rem;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--text);
+}
+
+main,footer{
+    margin:var(--margin-lg);
+}
+
+main>section, footer{
+    margin-top:5rem;
+    margin-bottom: 5rem;
+    border-radius: var(--border1);
+}
+
+.gap{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button{
+    background-color: var(--primary);
+    color: var(--text);
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-secondary{
+    background-color: var(--secondary);
+    color: var(--text);
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card{
+    padding: 2.5rem;
+    border-radius: var(--border1);
+}
+
+.primary20{
+    background-color: var(--primary20);
+}
+
+.primary10{
+    background-color: var(--primary10);
+}
+
+.primary5{
+    background-color: var(--primary5);
+}
+
+.secondary30{
+    background-color: var(--secondary30);
+}
+
+.secondary20{
+    background-color: var(--secondary20);
+}
+
+.secondary10{
+    background-color: var(--secondary10);
+}
+
+.secondary5{
+    background-color: var(--secondary5);
+}
+
+.text5{
+    background-color: var(--text5);
 }
 
 
@@ -16,8 +94,6 @@
     "main main main main"
     "footer footer footer footer"
     ;
-    column-gap: 10px;
-    row-gap: 15px;
 }
 
 
@@ -25,15 +101,30 @@
     grid-area: header;
 }
 
+
+
+nav>ul{
+    list-style-type: none;
+    margin:0;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
 .navigation{
+    padding:.5rem 12%;
+    border-bottom: 1px solid var(--static7);
     display: grid;
+    min-height: 5vh;
+    max-height: 5vh;
     grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "logo . home about services contact"
     ;
-    column-gap: 10px;
-    row-gap: 15px;
+
 }
 
 .logo{
@@ -65,68 +156,172 @@
 }
 
 .section1{
-    grid-area: section1;
     display:grid;
+    min-height: 400px;
+    max-height: 400px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "nadpis1 nadpis1 img1 img1"
-    ". . img1 img1"
     "text1 text1 img1 img1"
     ;
-    column-gap: 10px;
-    row-gap: 15px;
-}
-
-.nadpis1{
-    grid-area: nadpis1;
-}
-
-.img1{
-    grid-area: img1;
 }
 
 .text1{
     grid-area: text1;
 }
 
+.img1{
+    grid-area: img1;
+}
+
+
+
 .section2{
-    grid-area: section2;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "nadpis2 nadpis2 nadpis2 nadpis2"
-    "text2 text2 text2 text2"
+    "nadpis2 nadpis2 nadpis2"
+    "text2-1 text2-2 text2-3"
     ;
-    column-gap: 10px;
-    row-gap: 15px;
+    column-gap: 20px;
 }
 
 .nadpis2{
     grid-area: nadpis2;
+    text-align: center;
 }
 
-.text2{
-    grid-area: text2;
+.text2-1{
+    grid-area: text2-1;
 }
+
+.text2-2{
+    grid-area: text2-2;
+}
+
+.text2-3{
+    grid-area: text2-3;
+}
+
+
 .section3{
-    grid-area: section3;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "nadpis3 nadpis3 nadpis3 nadpis3"
-    "text3 text3 text3 text3"
+    "text3-1 img3-1"
+    "img3-2 text3-2"
     ;
-    column-gap: 10px;
-    row-gap: 15px;
 }
 
-.nadpis3{
-    grid-area: nadpis3;
+.text3-1{
+    grid-area: text3-1;
 }
 
-.text3{
-    grid-area: text3;
+.img3-1{
+    grid-area: img3-1;
+}
+
+.text3-2{
+    grid-area: text3-2;
+}
+
+.img3-2{
+    grid-area: img3-2;
+}
+
+
+.section4{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "podnadpis4-1  podnadpis4-1 podnadpis4-1"
+    " osoba2 osoba1 osoba3 "
+    ;
+}
+
+.podnadpis4-1{
+    grid-area: podnadpis4-1;
+    text-align: center;
+}
+
+.osoba1{
+    grid-area: osoba1;
+    text-align: center;
+}
+
+.osoba2{
+    grid-area: osoba2;
+    visibility: hidden;
+    
+}
+
+.osoba3{
+    grid-area: osoba3;
+    visibility: hidden;
+}
+
+
+.sectiom5{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "podnadpis5-1"
+    "text5-1"
+    "tlacitko5-1"
+    ;
+}
+
+.podnadpis5-1{
+    grid-area: podnadpis5-1;
+    text-align: center;
+}
+
+.text5-1{
+    grid-area: text5-1;
+}
+
+.tlacitko5-1{
+    grid-area: tlacitko5-1;
+    text-align: center;
+}
+
+.section6{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nadpis6-1 otazka1"
+    "text6-1 otazka2"
+    ". otazka3"
+    ". otazka4"
+    ;
+}
+
+.nadpis6-1{
+    grid-area: nadpis6-1;
+    text-align: center;
+}
+
+.text6-1{
+    grid-area: text6-1;
+}
+
+.otazka1{
+    grid-area: otazka1;
+}
+
+.otazka2{
+    grid-area: otazka2;
+}
+
+.otazka3{
+    grid-area: otazka3;
+}
+
+.otazka4{
+    grid-area: otazka4;
 }
