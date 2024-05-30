@@ -1,7 +1,7 @@
-const btn = document.querySelector(".btn");
+const btn = document.querySelector("#darkmode-btn");
 
 // da prednost ručnímu výběru uživatele před preferencemi v systému
-/* pozn v pripade, ze uzivatel nemenil rucne theme, tak se bere podle 
+/* poznamka v pripade, ze uzivatel nemenil rucne theme, tak se bere podle 
 systemu pres css @media prefers-color-scheme*/
 var currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {

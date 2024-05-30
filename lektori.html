@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/color.css" />
+    <link rel="stylesheet" href="assets/css/color-class.css" />
+    <link rel="stylesheet" href="assets/css/mycss.css" />
+    <link rel="stylesheet" href="assets/css/lektori.css" />
+    <title>Lektoři</title>
+    <script src="assets/js/darkmode.js" defer></script>
+  </head>
+  <body class="bodycontainer">
+    <header class="header">
+      <nav>
+        <ul class="navigation">
+          <li class="logo"><a href="index.html">DO (na)UČ SE!</a></li>
+          <li class="home"><a href="index.html">Domů</a></li>
+          <li class="about"><a href="onas.html">O nás</a></li>
+          <li class="services"><a href="kurzy.html">Kurzy</a></li>
+          <li class="contact"><a href="lektori.html">Lektoři</a></li>
+
+          <button class="darkmode" id="darkmode-btn">
+            <svg width="30" height="30" id="light-icon">
+              <circle cx="15" cy="15" r="6" fill="currentColor" />
+
+              <line
+                id="ray"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                x1="15"
+                y1="1"
+                x2="15"
+                y2="4"
+              ></line>
+
+              <use href="#ray" transform="rotate(45 15 15)" />
+              <use href="#ray" transform="rotate(90 15 15)" />
+              <use href="#ray" transform="rotate(135 15 15)" />
+              <use href="#ray" transform="rotate(180 15 15)" />
+              <use href="#ray" transform="rotate(225 15 15)" />
+              <use href="#ray" transform="rotate(270 15 15)" />
+              <use href="#ray" transform="rotate(315 15 15)" />
+            </svg>
+            <svg width="30" height="30" id="dark-icon">
+              <path
+                fill="currentColor"
+                d="
+                        M 23, 5
+                        A 12 12 0 1 0 23, 25
+                        A 12 12 0 0 1 23, 5"
+              />
+            </svg>
+          </button>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+        <h1>Naši lektoři</h1>
+        <div class="lektori">
+            <div class="card secondary20">
+                <h3>Mgr. Ondřej Zlámal (Fyzika, Matematika)</h3>
+                <img src="/assets/img/placeholder/300.png" alt="lektor" />
+                <p>Ondřej Zlámal vyučuje kurzy zaměřené na fyziku a matematiku. Specializuje se na přípravu ke státní
+                    maturitě z matematiky, včetně kurzů "Příprava ke státní maturitě z matematiky I." a II. Má více než 10
+                    let zkušeností s výukou na středních školách. Je známý svým přístupem, který kombinuje teoretické
+                    znalosti s praktickými příklady. Ondřej vystudoval Matematicko-fyzikální fakultu Univerzity Karlovy,
+                    kde získal titul magistra (Mgr.) v oboru fyzika a matematika.
+                    </p>
+            </div>
+
+            <div class="card secondary20">
+                <h3>Bc. Denisa Rydlinská (Angličtina, Němčina)</h3>
+                <img src="/assets/img/placeholder/300.png" alt="lektor" />
+                <p>Mezi její kurzy patří "Intenzivní kurz angličtiny pro maturanty", "Konverzační kurz němčiny pro
+                    pokročilé" a "Příprava na jazykové certifikáty - angličtina a němčina." Denisa má 5 let zkušeností s
+                    výukou jazyků na jazykových školách a soukromých kurzech. Denisa vystudovala Filozofickou fakultu
+                    Univerzity Karlovy, kde získala bakalářský titul (Bc.) v oboru angličtina a němčina.
+                    </p>
+            </div>
+
+            <div class="card secondary20">
+                <h3>Ing. José Suarez (Španělština, Francouzština)</h3>
+                <img src="/assets/img/placeholder/300.png" alt="lektor" />
+                <p>José Suarez vyučuje kurzy španělštiny a francouzštiny. Nabízí kurzy jako "Španělština pro začátečníky",
+                    "Intenzivní kurz francouzštiny pro cestovatele" a "Příprava na DELE a DELF jazykové zkoušky." José má
+                    více než 7 let zkušeností s výukou jazyků na různých úrovních vzdělávacího systému. Jeho metoda výuky
+                    zahrnuje interaktivní přístupy a kulturní kontext, což studentům umožňuje lepší porozumění a praktické
+                    použití jazyka. José vystudoval Technickou univerzitu v Madridu, kde získal inženýrský titul (Ing.).
+                    </p>
+            </div>
+
+            <div class="card secondary20">
+                <h3>Ing. Beáta Vychodilová, Ph.D. (Český jazyk, Dějepis)
+                </h3>
+                <img src="/assets/img/placeholder/300.png" alt="lektor" />
+                <p>Specializuje se na přípravu ke státní maturitě z českého jazyka a nabízí i tematické kurzy jako "Česká
+                    literatura pro pokročilé", "Dějepisné semináře: Česká historie v kontextu" a "Příprava na státní maturitu
+                    z českého jazyka." Beáta má více než 15 let zkušeností s výukou na středních školách a univerzitách.
+                    Beáta vystudovala České vysoké učení technické v Praze, kde získala inženýrský titul (Ing.) a následně
+                    doktorát (Ph.D.) v oblasti humanitních věd, se zaměřením na český jazyk a dějepis.
+                </p>
+            </div>
+
+            <div class="card secondary20">
+                <h3>Mgr. Jan Novák (Chemie, Biologie)</h3>
+                <img src="/assets/img/placeholder/300.png" alt="lektor" />
+                <p>Jan Novák vyučuje kurzy zaměřené na chemii a biologii. Mezi jeho kurzy patří "Příprava ke státní maturitě
+                    z chemie" a "Biologie pro začátečníky." Jan má 8 let zkušeností s výukou na středních školách a
+                    univerzitách. Jeho výukový styl je založen na praktických ukázkách a experimentech, které studentům
+                    umožňují lepší pochopení a zapamatování učiva. Jan vystudoval Přírodovědeckou fakultu Univerzity Karlovy,
+                    kde získal titul magistra (Mgr.) v oboru chemie a biologie.
+                </p>
+            
+                
+
+        </div>
+
+        <div class="card secondary20">
+            <h3>Mgr. Tomáš Jedno (Programování, Geografie)</h3>
+            <img src="/assets/img/placeholder/300.png" alt="lektor" />
+            <p>Tomáš Jedno se specializuje na výuku programování a geografie. Jeho kurzy zahrnují "Základy programování pro střední školy" a 
+                "Geografie: Pochopení světa kolem nás." Tomáš má 8 let zkušeností s výukou na středních školách a univerzitách. 
+                Jeho výukový styl je založen na kombinaci teoretických lekcí a praktických cvičení, které studentům umožňují hlubší pochopení učiva. 
+                Tomáš vystudoval Přírodovědeckou fakultu Univerzity Karlovy, kde získal titul magistra (Mgr.) v oboru programování a geografie.
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer card text5">
+      <h5>Socials</h5>
+      <img src="/assets/img/placeholder/25.png" alt="fb" />
+      <img src="/assets/img/placeholder/25.png" alt="ig" />
+      <img src="/assets/img/placeholder/25.png" alt="twitter" />
+      <img src="/assets/img/placeholder/25.png" alt="linkedin" />
+      <p>&copy; 2020</p>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+  </body>
+</html>

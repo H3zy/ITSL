@@ -1,0 +1,92 @@
+.section1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "text1-1 obrazek1-1"
+    "obrazek1-2 text1-2"
+    "text1-3 obrazek1-3"
+    "obrazek1-4 text1-4"
+    "text1-5 obrazek1-5"
+    ;
+    column-gap: 20px;
+}
+
+.nadpis1{
+    text-align: center;
+}
+
+.text1-1{
+    grid-area: text1-1;
+}
+
+.text1-2{
+    grid-area: text1-2;
+}
+
+.text1-3{
+    grid-area: text1-3;
+}
+
+.text1-4{
+    grid-area: text1-4;
+}
+
+.text1-5{
+    grid-area: text1-5;
+}
+
+.obrazek1-1{
+    grid-area: obrazek1-1;
+}
+
+.obrazek1-2{
+    grid-area: obrazek1-2;
+}
+
+.obrazek1-3{
+    grid-area: obrazek1-3;
+}
+
+.obrazek1-4{
+    grid-area: obrazek1-4;
+}
+
+.obrazek1-5{
+    grid-area: obrazek1-5;
+}
+
+.section2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nadpis2 nadpis2"
+    "clovek1 clovek2"
+    "clovek3 clovek4"
+    ;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.nadpis2{
+    grid-area: nadpis2;
+    text-align: center;
+}
+
+.clovek1{
+    grid-area: clovek1;
+}
+
+.clovek2{
+    grid-area: clovek2;
+}
+
+.clovek3{
+    grid-area: clovek3;
+}
+
+.clovek4{
+    grid-area: clovek4;
+}
+

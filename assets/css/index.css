@@ -1,0 +1,199 @@
+.section1{
+    display:grid;
+    min-height: 400px;
+    max-height: 400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "text1 text1 img1 img1"
+    ;
+}
+
+.text1{
+    grid-area: text1;
+}
+
+.img1{
+    grid-area: img1;
+}
+
+
+
+.section2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nadpis2 nadpis2 nadpis2"
+    "text2-1 text2-2 text2-3"
+    ;
+    column-gap: 20px;
+}
+
+.nadpis2{
+    grid-area: nadpis2;
+    text-align: center;
+}
+
+.text2-1{
+    grid-area: text2-1;
+}
+
+.text2-2{
+    grid-area: text2-2;
+}
+
+.text2-3{
+    grid-area: text2-3;
+}
+
+.section3-nadpis{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nadpis3-1"
+    "obsah3-1"
+    ;
+}
+
+.nadpis3-1{
+    grid-area: nadpis3-1;
+    text-align: center;
+}
+
+.obsah3-1{
+    grid-area: obsah3-1;
+}
+
+.section3{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "text3-1 img3-1"
+    "img3-2 text3-2"
+    ;
+}
+
+.text3-1{
+    grid-area: text3-1;
+}
+
+.img3-1{
+    grid-area: img3-1;
+}
+
+.text3-2{
+    grid-area: text3-2;
+}
+
+.img3-2{
+    grid-area: img3-2;
+}
+
+.button3-1{
+    grid-area: button3-1;
+    text-align: center;
+    width: 50%;
+}
+
+
+.section4{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap:2rem;
+    grid-template-areas: 
+    "podnadpis4-1  podnadpis4-1 podnadpis4-1"
+    " osoba2 osoba1 osoba3 "
+    ;
+}
+
+
+.podnadpis4-1{
+    grid-area: podnadpis4-1;
+    text-align: center;
+}
+
+.osoba1{
+    grid-area: osoba1;
+    text-align: center;
+}
+
+.osoba2{
+    grid-area: osoba2;
+    
+}
+
+.osoba3{
+    grid-area: osoba3;
+}
+
+
+.sectiom5{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "podnadpis5-1"
+    "text5-1"
+    "tlacitko5-1"
+    ;
+}
+
+.podnadpis5-1{
+    grid-area: podnadpis5-1;
+    text-align: center;
+}
+
+.text5-1{
+    grid-area: text5-1;
+}
+
+.tlacitko5-1{
+    grid-area: tlacitko5-1;
+    text-align: center;
+}
+
+.section6{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nadpis6-1 otazka1"
+    "text6-1 otazka2"
+    ". otazka3"
+    ". otazka4"
+    ". otazka5"
+    ;
+}
+
+.nadpis6-1{
+    grid-area: nadpis6-1;
+    text-align: center;
+}
+
+.text6-1{
+    grid-area: text6-1;
+}
+
+.otazka1{
+    grid-area: otazka1;
+}
+
+.otazka2{
+    grid-area: otazka2;
+}
+
+.otazka3{
+    grid-area: otazka3;
+}
+
+.otazka4{
+    grid-area: otazka4;
+}
+
+.otazka5{
+    grid-area: otazka5;
+}

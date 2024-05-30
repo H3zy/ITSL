@@ -188,6 +188,11 @@
     text-transform: none;
   }
   
+  button {
+    all: unset;
+    cursor: pointer;
+  }
+
   /**
    * Correct the inability to style clickable types in iOS and Safari.
    */

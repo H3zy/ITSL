@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/font.css">
-    <link rel="stylesheet" href="assets/css/color.css">
-    <link rel="stylesheet" href="assets/css/color-class.css">
-    <link rel="stylesheet" href="assets/css/mycss.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/color.css" />
+    <link rel="stylesheet" href="assets/css/color-class.css" />
+    <link rel="stylesheet" href="assets/css/mycss.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <title>Domů</title>
     <script src="assets/js/darkmode.js" defer></script>
-</head>
-<body class="bodycontainer">
-    
+  </head>
+  <body class="bodycontainer">
     <header class="header">
-        <nav>
-            <ul class="navigation">
-                <li class="logo"><a href="">DO (na)UČ SE!</a></li>
-                <li class="home"><a href="#">Home</a></li>
-                <li class="about"><a href="#">About</a></li>
-                <li class="services"><a href="#">Services</a></li>
-                <li class="contact"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        
+      <nav>
+        <ul class="navigation">
+          <li class="logo"><a href="index.html">DO (na)UČ SE!</a></li>
+          <li class="home"><a href="index.html">Domů</a></li>
+          <li class="about"><a href="onas.html">O nás</a></li>
+          <li class="services"><a href="kurzy.html">Kurzy</a></li>
+          <li class="contact"><a href="lektori.html">Lektoři</a></li>
 
-        <button class="btn">
+          <button class="darkmode" id="darkmode-btn">
             <svg width="30" height="30" id="light-icon">
               <circle cx="15" cy="15" r="6" fill="currentColor" />
-      
+
               <line
                 id="ray"
                 stroke="currentColor"
@@ -40,7 +37,7 @@
                 x2="15"
                 y2="4"
               ></line>
-      
+
               <use href="#ray" transform="rotate(45 15 15)" />
               <use href="#ray" transform="rotate(90 15 15)" />
               <use href="#ray" transform="rotate(135 15 15)" />
@@ -53,132 +50,300 @@
               <path
                 fill="currentColor"
                 d="
-                M 23, 5
-                A 12 12 0 1 0 23, 25
-                A 12 12 0 0 1 23, 5"
+                        M 23, 5
+                        A 12 12 0 1 0 23, 25
+                        A 12 12 0 0 1 23, 5"
               />
             </svg>
           </button>
-
+        </ul>
+      </nav>
     </header>
 
     <main class="main">
+      <section class="section1">
+        <div class="text1">
+          <h1>Trápí vás špatné známky?</h1>
+          <p>
+            Vítejte na Do(na)uč se! Nabízíme zde širokou nabídku doučovacích
+            kurzů určených pro studenty základních, středních nebo vysokých
+            škol. Kromě doučování nabízíme volnočasové kroužky a přípravu na
+            přijímací zkoušky. Zaměstnáváme odborníky na výuku, kteří jsou
+            zkušení a předávají informace efektivním způsobem. Naším mottem je
+            “udělat ze vzdělávání opět zábavou”.
+          </p>
+          <button class="button">více info</button>
+        </div>
+        <img
+          class="img1"
+          src="/assets/img/placeholder/600x400.png"
+          alt="hero image"
+        />
+      </section>
 
-        <section class="section1">
-            <div class="text1">
-                <h1>Heading 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <button class="button">více info</button>
-            </div>
-            <img class="img1" src="/assets/img/placeholder/600x400.png" alt="hero image">
-        </section>
+      <section class="section2">
+        <h2 class="nadpis2">Naše silné stránky</h2>
 
-        <section class="section2">
-            <h2 class="nadpis2">Heading 2</h2>
+        <div class="text2-1 card primary20">
+          <h3>KURZY</h3>
+          <p>
+            Nabízíme více než 30 kurzů za týden. Věnujeme se dětem na základní
+            škole, ale také středoškolákům a vysokoškolákům. Usilujeme o to,
+            abychom pomohli, co nejvíce studentům.
+          </p>
+        </div>
 
-            <div class="text2-1 card primary20">
-                <h3>Subheading </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-            </div>
-           
-            <div class="text2-2 card primary20">
-                <h3>Subheading </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-            </div>
-            
-            <div class="text2-3 card primary20">
-                <h3>Subheading </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-            </div>
-            
-        </section>
+        <div class="text2-2 card primary20">
+          <h3>LEKTOŘI</h3>
+          <p>
+            Lektoři mají za sebou minimálně pětiletou praxi a jsou podrobeni
+            psychologickým testům. Snažíme se pro vás najít ty nejlepší učitele.
+            S námi se bát o neprofesionalitu nemusíte.
+          </p>
+        </div>
 
-        <section class="section3 card secondary20">
-            
-            <div class="text3-1">
-                <h3>Main proposition</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <ul>
-                    <li>point 1</li>
-                    <li>point 2</li>
-                    <li>point 3</li>
-                </ul>
-            </div>
-            <img class="img3-1" src="/assets/img/placeholder/400.png" alt="img">
-            <div class="text3-2">
-                <h3>Main proposition</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-            </div>
-            <img class="img3-2" src="/assets/img/placeholder/400.png" alt="img">
-        </section>
+        <div class="text2-3 card primary20">
+          <h3>INDIVIDUALISMUS</h3>
+          <p>
+            V rámci doučování nabízíme individuální výuku, skupinové lekce nebo
+            online doučování prostřednictvím videohovorů. Každému vyhovuje jiný
+            způsob, tak ať máte možnost si vybrat dle vašich preferencí.
+          </p>
+        </div>
+      </section>
 
-        <section class="section4">
-            <h3 class="podnadpis4-1">What people say about us</h3>
-            <div class="osoba1 card primary10">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-                <img src="/assets/img/placeholder/50.png" alt="obrazek cloveka">
-                <p>Pepa / 14 let</p>
-            </div>
-            <div class="osoba2 card primary10">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-                <img src="/assets/img/placeholder/50.png" alt="obrazek cloveka">
-                <p>Pepa / 14 let</p>
-            </div> 
-            <div class="osoba3 card primary10">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-                <img src="/assets/img/placeholder/50.png" alt="obrazek cloveka">
-                <p>Pepa / 14 let</p>
-            </div>           
-        </section>
- 
-        <section class="section6 card">
-            <h2 class="nadpis6-1">FAQ</h2>
-            <p>Odpovědi na vaše nejčastější otázky</p>
-            <div class="otazka1 card secondary30 gap">
-                <h4>Frequently asked question</h4>
-                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" class="faq-icon" data-astro-cid-j7pv25f6=""> <path d="M11.5 0L11.5 23" stroke="var(--accent)" stroke-width="6" data-astro-cid-j7pv25f6=""></path> <path d="M23 11.5L-2.38419e-07 11.5" stroke="var(--accent)" stroke-width="6" data-astro-cid-j7pv25f6=""></path> </svg>
-                <p>answer</p>
-            </div>
-            <div class="otazka2 card secondary30 gap">
-                <h4>Frequently asked question</h4>
-                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" class="faq-icon" data-astro-cid-j7pv25f6=""> <path d="M11.5 0L11.5 23" stroke="var(--accent)" stroke-width="6" data-astro-cid-j7pv25f6=""></path> <path d="M23 11.5L-2.38419e-07 11.5" stroke="var(--accent)" stroke-width="6" data-astro-cid-j7pv25f6=""></path> </svg>
-                <p>answer</p>
-            </div>
-            <div class="otazka3 card secondary30 gap">
-                <h4>Frequently asked question</h4>
-                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" class="faq-icon" data-astro-cid-j7pv25f6=""> <path d="M11.5 0L11.5 23" stroke="var(--accent)" stroke-width="6" data-astro-cid-j7pv25f6=""></path> <path d="M23 11.5L-2.38419e-07 11.5" stroke="var(--accent)" stroke-width="6" data-astro-cid-j7pv25f6=""></path> </svg>
-                <p>answer</p>
-            </div>
-            <div class="otazka4 card secondary30 gap">
-                <h4>Frequently asked question</h4>
-                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" class="faq-icon" data-astro-cid-j7pv25f6=""> <path d="M11.5 0L11.5 23" stroke="var(--accent)" stroke-width="6" data-astro-cid-j7pv25f6=""></path> <path d="M23 11.5L-2.38419e-07 11.5" stroke="var(--accent)" stroke-width="6" data-astro-cid-j7pv25f6=""></path> </svg>
-                <p>answer</p>
-            </div>
-        </section>
+      <section class="section3-nadpis">
+        <h2 class="nadpis3-1">O nás</h2>
+        <div class="section3 obsah3-1 card secondary20">
+        <div class="text3-1">
+          <h3>Kdo jsme?</h3>
+          <p>
+            Jsme skupina vášnivých pedagogů s dlouholetou praxí v oblasti
+            vzdělávání. Naše poslání je poskytovat kvalitní doučování, která
+            pomáhají studentům dosahovat potřebných výsledků. Naši doučovatelé
+            jsou pečlivě vybráni podle svých pedagogických schopností, ale také
+            dle toho, zda jsou schopni dostatečně motivovat studenty.
+          </p>
+          <p>
+            Svým přístupem se snažíme vytvořit prostředí, které podporuje
+            aktivní učení, samostatnost a sebevědomí. Věříme, že vzdělání by
+            mělo být pro každého přístupné a zábavné, a právě proto se každý den
+            snažíme přinášet nové, inovativní metody doučování.
+          </p>
+          <button class="button-secondary">Více info</button>
+        </div>
+        <img class="img3-1" src="/assets/img/placeholder/400.png" alt="img" />
+        <div class="text3-2">
+          <h3>Co nabízíme?</h3>
+          <p>
+            Naše doučovací služby jsou koncipovány tak, aby splňovaly potřeby
+            každého studenta. Proto nabízíme doučování od předmětů pro základní
+            školu až po ty odbornější, které jsou vyučovány v rámci středních a
+            vysokých školy.
+          </p>
+          <b><p>Shrnutí naší nabídky</p></b>
+          <ul>
+            <li>kurzy pro základní školu</li>
+            <li>kurzy pro střední školy a příprava na maturitu</li>
+            <li>kurzy pro VŠ a příprava na zkoušky</li>
+            <li>individuální příprava na libovolný předmět</li>
+          </ul>
+          <button class="button-secondary">Nabídka našich kurzů</button>
+        </div>
+        <img class="img3-2" src="/assets/img/placeholder/400.png" alt="img" />
+        
+        </div>
+      </section>
 
-        <section class="section5">
-            <h2 class="podnadpis5-1">Call to action again</h2>
-            <p>call to action text</p>
-            <p class="tlacitko5-1 button">call to action</p>
-        </section>
+      <section class="section4">
+        <h3 class="podnadpis4-1">Co o nás lidi říkají?</h3>
+        <div class="osoba1 card primary10">
+            <img src="/assets/img/placeholder/50.png" alt="obrazek cloveka" />
+            <p>
+            "Do na(uč)se mě zachránilo před propadnutím z matiky!"
+          </p>
+          
+          <p>Eliška Krátká / 17 let</p>
+        </div>
+        <div class="osoba2 card primary10">
+            <img src="/assets/img/placeholder/50.png" alt="obrazek cloveka" />
+            <p>
+            "Díky individuálnímu přístupu lektorů jsem konečně porozuměl fyzice a zlepšil se ve škole."
+          </p>
+          
+          <p>Filip Doležal / 15 let</p>
+        </div>
+        <div class="osoba3 card primary10">
+            <img src="/assets/img/placeholder/50.png" alt="obrazek cloveka" />
+            <p>
+            "Doučování u vás mi pomohlo získat důvěru v angličtinu a překonat strach z mluvení."
+          </p>
+          
+          <p>Tomáš Kousal / 20 let</p>
+        </div>
+      </section>
 
+      <section class="section6 card">
+        <h2 class="nadpis6-1">FAQ</h2>
+        <p>Odpovědi na vaše nejčastější otázky</p>
+        <div class="otazka1 card secondary30 gap">
+          <h4>Nabízíte také online doučování nebo jsou lekce pouze v osobním kontaktu?</h4>
+          <svg
+            width="23"
+            height="23"
+            viewBox="0 0 23 23"
+            fill="none"
+            class="faq-icon"
+            data-astro-cid-j7pv25f6=""
+          >
+            <path
+              d="M11.5 0L11.5 23"
+              stroke="var(--accent)"
+              stroke-width="6"
+              data-astro-cid-j7pv25f6=""
+            ></path>
+            <path
+              d="M23 11.5L-2.38419e-07 11.5"
+              stroke="var(--accent)"
+              stroke-width="6"
+              data-astro-cid-j7pv25f6=""
+            ></path>
+          </svg>
+          <p>Nabízíme jak osobní doučování, tak i online lekce. Pro online doučování využíváme interaktivní
+            online platformu, kde studenti a instruktoři mohou komunikovat prostřednictvím videohovorů
+            a sdílet materiály</p>
+        </div>
+        <div class="otazka2 card secondary30 gap">
+          <h4>Je možné si vybrat individuální doučování, nebo jsou lekce vždy ve skupině?</h4>
+          <svg
+            width="23"
+            height="23"
+            viewBox="0 0 23 23"
+            fill="none"
+            class="faq-icon"
+            data-astro-cid-j7pv25f6=""
+          >
+            <path
+              d="M11.5 0L11.5 23"
+              stroke="var(--accent)"
+              stroke-width="6"
+              data-astro-cid-j7pv25f6=""
+            ></path>
+            <path
+              d="M23 11.5L-2.38419e-07 11.5"
+              stroke="var(--accent)"
+              stroke-width="6"
+              data-astro-cid-j7pv25f6=""
+            ></path>
+          </svg>
+          <p>Stačí nám říct, zda preferujete individuální doučování nebo lekce ve skupině. Poté vám
+            připravíme nabídku kurzů odpovídající vašim požadavkům.
+            </p>
+        </div>
+        <div class="otazka3 card secondary30 gap">
+          <h4>Můžeme očekávat pravidelný feedback nebo zhodnocení pokroku našeho dítěte
+            během doučování?</h4>
+          <svg
+            width="23"
+            height="23"
+            viewBox="0 0 23 23"
+            fill="none"
+            class="faq-icon"
+            data-astro-cid-j7pv25f6=""
+          >
+            <path
+              d="M11.5 0L11.5 23"
+              stroke="var(--accent)"
+              stroke-width="6"
+              data-astro-cid-j7pv25f6=""
+            ></path>
+            <path
+              d="M23 11.5L-2.38419e-07 11.5"
+              stroke="var(--accent)"
+              stroke-width="6"
+              data-astro-cid-j7pv25f6=""
+            ></path>
+          </svg>
+          <p>Každý student dostává pravidelný feedback od našich instruktorů. Během lekcí se sleduje
+            pokrok a na konci každé lekce dostanete zhodnocení toho, na čem ještě pracovat a co už jste
+            zvládli. V případě Vašeho zájmu Vám zhodnocení můžeme i vypisovat</p>
+        </div>
+        <div class="otazka4 card secondary30 gap">
+          <h4>Jaká je dostupnost lekcí v průběhu týdne a je možné si vybrat flexibilní časy?</h4>
+          <svg
+            width="23"
+            height="23"
+            viewBox="0 0 23 23"
+            fill="none"
+            class="faq-icon"
+            data-astro-cid-j7pv25f6=""
+          >
+            <path
+              d="M11.5 0L11.5 23"
+              stroke="var(--accent)"
+              stroke-width="6"
+              data-astro-cid-j7pv25f6=""
+            ></path>
+            <path
+              d="M23 11.5L-2.38419e-07 11.5"
+              stroke="var(--accent)"
+              stroke-width="6"
+              data-astro-cid-j7pv25f6=""
+            ></path>
+          </svg>
+          <p>Po domluvě s vámi se domluvíme na termínu, který vám vyhovuje. Naše lekce jsou k dispozici
+            v průběhu celého týdne, takže si můžete vybrat časy, které vám nejlépe vyhovují.
+            </p>
+        </div>
+        <div class="otazka5 card secondary30 gap">
+            <h4>Jaké jsou možnosti platby za doučování a máte nějaké speciální nabídky pro
+                pravidelné klienty?</h4>
+            <svg
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="none"
+              class="faq-icon"
+              data-astro-cid-j7pv25f6=""
+            >
+              <path
+                d="M11.5 0L11.5 23"
+                stroke="var(--accent)"
+                stroke-width="6"
+                data-astro-cid-j7pv25f6=""
+              ></path>
+              <path
+                d="M23 11.5L-2.38419e-07 11.5"
+                stroke="var(--accent)"
+                stroke-width="6"
+                data-astro-cid-j7pv25f6=""
+              ></path>
+            </svg>
+            <p>Platbu za doučování můžete provést buď jednorázově před každou lekcí nebo si můžete
+                zakoupit balíček lekcí se slevou. Stačí nám říct, jaký způsob platby preferujete, a my vám
+                připravíme fakturu nebo platební odkaz.</p>
+          </div>
+      </section>
+
+      <section class="section5 card primary20">
+        <h2 class="podnadpis5-1">Udělejme ze vzdělávání opět zábavu!</h2>
+        <p class="tlacitko5-1 button">Do nauč se ještě dnes!</p>
+      </section>
     </main>
 
     <footer class="footer card text5">
-        <h5>Socials</h5>
-        <img src="/assets/img/placeholder/25.png" alt="fb">
-        <img src="/assets/img/placeholder/25.png" alt="ig">
-        <img src="/assets/img/placeholder/25.png" alt="twitter">
-        <img src="/assets/img/placeholder/25.png" alt="linkedin">
-        <p>&copy; 2020</p>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-        </ul>
+      <h5>Socials</h5>
+      <img src="/assets/img/placeholder/25.png" alt="fb" />
+      <img src="/assets/img/placeholder/25.png" alt="ig" />
+      <img src="/assets/img/placeholder/25.png" alt="twitter" />
+      <img src="/assets/img/placeholder/25.png" alt="linkedin" />
+      <p>&copy; 2020</p>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
     </footer>
-    
-</body>
-
+  </body>
 </html>

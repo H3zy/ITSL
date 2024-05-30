@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/color.css" />
+    <link rel="stylesheet" href="assets/css/color-class.css" />
+    <link rel="stylesheet" href="assets/css/mycss.css" />
+    <link rel="stylesheet" href="assets/css/kurzy.css" />
+    <title>Kurzy</title>
+    <script src="assets/js/darkmode.js" defer></script>
+  </head>
+  <body class="bodycontainer">
+    <header class="header">
+      <nav>
+        <ul class="navigation">
+          <li class="logo"><a href="index.html">DO (na)UČ SE!</a></li>
+          <li class="home"><a href="index.html">Domů</a></li>
+          <li class="about"><a href="onas.html">O nás</a></li>
+          <li class="services"><a href="kurzy.html">Kurzy</a></li>
+          <li class="contact"><a href="lektori.html">Lektoři</a></li>
+
+          <button class="darkmode" id="darkmode-btn">
+            <svg width="30" height="30" id="light-icon">
+              <circle cx="15" cy="15" r="6" fill="currentColor" />
+
+              <line
+                id="ray"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                x1="15"
+                y1="1"
+                x2="15"
+                y2="4"
+              ></line>
+
+              <use href="#ray" transform="rotate(45 15 15)" />
+              <use href="#ray" transform="rotate(90 15 15)" />
+              <use href="#ray" transform="rotate(135 15 15)" />
+              <use href="#ray" transform="rotate(180 15 15)" />
+              <use href="#ray" transform="rotate(225 15 15)" />
+              <use href="#ray" transform="rotate(270 15 15)" />
+              <use href="#ray" transform="rotate(315 15 15)" />
+            </svg>
+            <svg width="30" height="30" id="dark-icon">
+              <path
+                fill="currentColor"
+                d="
+                        M 23, 5
+                        A 12 12 0 1 0 23, 25
+                        A 12 12 0 0 1 23, 5"
+              />
+            </svg>
+          </button>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+     <section>
+        <h1>Naše kurzy</h1>
+        <div class="kurzy">
+            <div class="card primary20">
+                <h3>Příprava ke státní maturitě z matematiky I.</h3>
+                <img src="/assets/img/placeholder/200.png" alt="">
+                <p>Deset lekcí zaměřených pouze na algebraickou část <br>
+                Začínáme ve středu 2. 10. 2024, vždy od 17:00 do 18:30 <br>
+                Liberec Ruprechtická 632
+                </p>
+                <button class="button">
+                    <a href="prihlaska.html">Přihlásit se</a>
+                </button>
+            </div>
+
+            <div class="card primary20">
+                <h3>Příprava ke státní maturitě z matematiky II.</h3>
+                <img src="/assets/img/placeholder/200.png" alt="">
+                <p>Deset lekcí zaměřených pouze na funkce, posloupnost a slovní úlohy <br>
+                    Začínáme ve čtvrtek 3. 10. 2024, vždy od 17:00 do 18:30 <br>
+                    Liberec Ruprechtická 632
+                </p>
+                <button class="button">
+                    <a href="prihlaska.html">Přihlásit se</a>
+                </button>
+            </div>
+
+            <div class="card primary20">
+                <h3>Konverzační kurz němčiny pro pokročilé</h3>
+                <img src="/assets/img/placeholder/200.png" alt="">
+                <p>Deset lekcí zaměřených na zdokonalení konverzačních schopností v němčině <br>
+                    Začínáme v pondělí 6. 10. 2024, vždy od 18:00 do 19:30 <br>
+                    Liberec, Vodičkova 22
+
+                </p>
+                <button class="button">
+                    <a href="prihlaska.html">Přihlásit se</a>
+                </button>
+            </div>
+
+            <div class="card primary20">
+                <h3>Příprava na DELE a DELF jazykové zkoušky</h3>
+                <img src="/assets/img/placeholder/200.png" alt="">
+                <p>Dvanáct lekcí zaměřených na přípravu na španělské a francouzské jazykové zkoušky<br>
+                    Začínáme v úterý 7. 10. 2024, vždy od 15:00 do 16:30 <br>
+                    Jablonec, Kounicova 15 
+
+                </p>
+                <button class="button">
+                    <a href="prihlaska.html">Přihlásit se</a>
+                </button>
+            </div>
+
+            <div class="card primary20">
+                <h3>Česká historie v kontextuy</h3>
+                <img src="/assets/img/placeholder/200.png" alt="">
+                <p>Osm lekcí zaměřených na důležité události a osobnosti české historie
+                    <br>
+                    Začínáme ve středu 8. 10. 2024, vždy od 16:30 do 18:00 <br>
+                    Jablonec, Klatovská 12
+
+                </p>
+                <button class="button">
+                    <a href="prihlaska.html">Přihlásit se</a>
+                </button>
+            </div>
+        </div>
+     </section>
+    </main>
+
+    <footer class="footer card text5">
+      <h5>Socials</h5>
+      <img src="/assets/img/placeholder/25.png" alt="fb" />
+      <img src="/assets/img/placeholder/25.png" alt="ig" />
+      <img src="/assets/img/placeholder/25.png" alt="twitter" />
+      <img src="/assets/img/placeholder/25.png" alt="linkedin" />
+      <p>&copy; 2020</p>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+  </body>
+</html>
