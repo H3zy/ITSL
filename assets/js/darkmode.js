@@ -1,24 +1,40 @@
 const btn = document.querySelector(".btn");
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-const currentTheme = localStorage.getItem("theme");
+// da prednost ručnímu výběru uživatele před preferencemi v systému
+/* pozn v pripade, ze uzivatel nemenil rucne theme, tak se bere podle 
+systemu pres css @media prefers-color-scheme*/
+var currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
-  document.body.classList.toggle("dark-theme");
+  document.body.classList.add("dark-theme");
+  document.body.classList.remove("light-theme");
 } else if (currentTheme == "light") {
-  document.body.classList.toggle("light-theme");
+  document.body.classList.add("light-theme");
+  document.body.classList.remove("dark-theme");
 }
 
+// on click event pro zmenu dark modu
 btn.addEventListener("click", function () {
-  if (prefersDarkScheme.matches) {
-    document.body.classList.toggle("light-theme");
-    var theme = document.body.classList.contains("light-theme")
-      ? "light"
-      : "dark";
+  //zkontroluje jestli byl uz nekdy menen dark mode rucne
+  if (currentTheme == null) {
+    // pokud nebyl, zkontroluje jaky mode je nastaven v systemu
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.body.classList.remove("dark-theme");
+      document.body.classList.add("light-theme");
+      localStorage.setItem("theme", "light");
+    } else {
+      document.body.classList.remove("light-theme");
+      document.body.classList.add("dark-theme");
+      localStorage.setItem("theme", "dark");
+    }
+  // zmeni aktualni theme na opacny 
+  } else if (currentTheme == "dark") {
+    document.body.classList.add("light-theme");
+    document.body.classList.remove("dark-theme");
+    localStorage.setItem("theme", "light");
   } else {
-    document.body.classList.toggle("dark-theme");
-    var theme = document.body.classList.contains("dark-theme")
-      ? "dark"
-      : "light";
+    document.body.classList.add("dark-theme");
+    document.body.classList.remove("light-theme");
+    localStorage.setItem("theme", "dark");
   }
-  localStorage.setItem("theme", theme);
+  currentTheme = localStorage.getItem("theme");
 });
