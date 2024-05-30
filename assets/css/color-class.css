@@ -1,0 +1,403 @@
+.text{
+    background-color: var(--text);
+  }
+  
+  .background{
+    background-color: var(--background);
+  }
+  
+  .primary{
+    background-color: var(--primary);
+  }
+  
+  .secondary{
+    background-color: var(--secondary);
+  }
+  
+  .accent{
+    background-color: var(--accent);
+  }
+  
+  .textcontrast{
+    background-color: var(--textcontrast);
+  }
+  
+  .bgcontrast{
+    background-color: var(--bgcontrast);
+  }
+  
+  .primarycontrast{
+    background-color: var(--primarycontrast);
+  }
+  
+  .secondarycontrast{
+    background-color: var(--secondarycontrast);
+  }
+  
+  .accentcontrast{
+    background-color: var(--accentcontrast);
+  }
+  
+  .text5{
+    background-color: var(--text5);
+  }
+  
+  .text10{
+    background-color: var(--text10);
+  }
+  
+  .text15{
+    background-color: var(--text15);
+  }
+  
+  .text20{
+    background-color: var(--text20);
+  }
+  
+  .text25{
+    background-color: var(--text25);
+  }
+  
+  .text30{
+    background-color: var(--text30);
+  }
+  
+  .text35{
+    background-color: var(--text35);
+  }
+  
+  .text40{
+    background-color: var(--text40);
+  }
+  
+  .text45{
+    background-color: var(--text45);
+  }
+  
+  .text50{
+    background-color: var(--text50);
+  }
+  
+  .text55{
+    background-color: var(--text55);
+  }
+  
+  .text60{
+    background-color: var(--text60);
+  }
+  
+  .text65{
+    background-color: var(--text65);
+  }
+  
+  .text70{
+    background-color: var(--text70);
+  }
+  
+  .text75{
+    background-color: var(--text75);
+  }
+  
+  .text80{
+    background-color: var(--text80);
+  }
+  
+  .text85{
+    background-color: var(--text85);
+  }
+  
+  .text90{
+    background-color: var(--text90);
+  }
+  
+  .text95{
+    background-color: var(--text95);
+  }
+  
+  .primary5{
+    background-color: var(--primary5);
+  }
+  
+  .primary10{
+    background-color: var(--primary10);
+  }
+  
+  .primary15{
+    background-color: var(--primary15);
+  }
+  
+  .primary20{
+    background-color: var(--primary20);
+  }
+  
+  .primary25{
+    background-color: var(--primary25);
+  }
+  
+  .primary30{
+    background-color: var(--primary30);
+  }
+  
+  .primary35{
+    background-color: var(--primary35);
+  }
+  
+  .primary40{
+    background-color: var(--primary40);
+  }
+  
+  .primary45{
+    background-color: var(--primary45);
+  }
+  
+  .primary50{
+    background-color: var(--primary50);
+  }
+  
+  .primary55{
+    background-color: var(--primary55);
+  }
+  
+  .primary60{
+    background-color: var(--primary60);
+  }
+  
+  .primary65{
+    background-color: var(--primary65);
+  }
+  
+  .primary70{
+    background-color: var(--primary70);
+  }
+  
+  .primary75{
+    background-color: var(--primary75);
+  }
+  
+  .primary80{
+    background-color: var(--primary80);
+  }
+  
+  .primary85{
+    background-color: var(--primary85);
+  }
+  
+  .primary90{
+    background-color: var(--primary90);
+  }
+  
+  .primary95{
+    background-color: var(--primary95);
+  }
+  
+  .secondary5{
+    background-color: var(--secondary5);
+  }
+  
+  .secondary10{
+    background-color: var(--secondary10);
+  }
+  
+  .secondary15{
+    background-color: var(--secondary15);
+  }
+  
+  .secondary20{
+    background-color: var(--secondary20);
+  }
+  
+  .secondary25{
+    background-color: var(--secondary25);
+  }
+  
+  .secondary30{
+    background-color: var(--secondary30);
+  }
+  
+  .secondary35{
+    background-color: var(--secondary35);
+  }
+  
+  .secondary40{
+    background-color: var(--secondary40);
+  }
+  
+  .secondary45{
+    background-color: var(--secondary45);
+  }
+  
+  .secondary50{
+    background-color: var(--secondary50);
+  }
+  
+  .secondary55{
+    background-color: var(--secondary55);
+  }
+  
+  .secondary60{
+    background-color: var(--secondary60);
+  }
+  
+  .secondary65{
+    background-color: var(--secondary65);
+  }
+  
+  .secondary70{
+    background-color: var(--secondary70);
+  }
+  
+  .secondary75{
+    background-color: var(--secondary75);
+  }
+  
+  .secondary80{
+    background-color: var(--secondary80);
+  }
+  
+  .secondary85{
+    background-color: var(--secondary85);
+  }
+  
+  .secondary90{
+    background-color: var(--secondary90);
+  }
+  
+  .secondary95{
+    background-color: var(--secondary95);
+  }
+  
+  .accent5{
+    background-color: var(--accent5);
+  }
+  
+  .accent10{
+    background-color: var(--accent10);
+  }
+  
+  .accent15{
+    background-color: var(--accent15);
+  }
+  
+  .accent20{
+    background-color: var(--accent20);
+  }
+  
+  .accent25{
+    background-color: var(--accent25);
+  }
+  
+  .accent30{
+    background-color: var(--accent30);
+  }
+  
+  .accent35{
+    background-color: var(--accent35);
+  }
+  
+  .accent40{
+    background-color: var(--accent40);
+  }
+  
+  .accent45{
+    background-color: var(--accent45);
+  }
+  
+  .accent50{
+    background-color: var(--accent50);
+  }
+  
+  .accent55{
+    background-color: var(--accent55);
+  }
+  
+  .accent60{
+    background-color: var(--accent60);
+  }
+  
+  .accent65{
+    background-color: var(--accent65);
+  }
+  
+  .accent70{
+    background-color: var(--accent70);
+  }
+  
+  .accent75{
+    background-color: var(--accent75);
+  }
+  
+  .accent80{
+    background-color: var(--accent80);
+  }
+  
+  .accent85{
+    background-color: var(--accent85);
+  }
+  
+  .accent90{
+    background-color: var(--accent90);
+  }
+  
+  .accent95{
+    background-color: var(--accent95);
+  }
+  
+  .static{
+    background-color: var(--static);
+  }
+  
+  .static4{
+    background-color: var(--static4);
+  }
+  
+  .static3{
+    background-color: var(--static3);
+  }
+  
+  .static2{
+    background-color: var(--static2);
+  }
+  
+  .static5{
+    background-color: var(--static5);
+  }
+  
+  .static6{
+    background-color: var(--static6);
+  }
+  
+  .static7{
+    background-color: var(--static7);
+  }
+  
+  .static8{
+    background-color: var(--static8);
+  }
+  
+  .static9{
+    background-color: var(--static9);
+  }
+  
+  .static10{
+    background-color: var(--static10);
+  }
+  
+  .static11{
+    background-color: var(--static11);
+  }
+  
+  .static12{
+    background-color: var(--static12);
+  }
+  
+  .static13{
+    background-color: var(--static13);
+  }
+  
+  .static14{
+    background-color: var(--static14);
+  }
+  
+  .static15{
+    background-color: var(--static15);
+  }

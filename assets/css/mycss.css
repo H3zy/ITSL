@@ -9,6 +9,27 @@
     --border05: 0.5rem;
 }
 
+.dark{
+    color-scheme: dark;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+    color: var(--text);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
 body{
     background-color: var(--background);
     color: var(--text);
@@ -52,37 +73,7 @@ main>section, footer{
     border-radius: var(--border1);
 }
 
-.primary20{
-    background-color: var(--primary20);
-}
 
-.primary10{
-    background-color: var(--primary10);
-}
-
-.primary5{
-    background-color: var(--primary5);
-}
-
-.secondary30{
-    background-color: var(--secondary30);
-}
-
-.secondary20{
-    background-color: var(--secondary20);
-}
-
-.secondary10{
-    background-color: var(--secondary10);
-}
-
-.secondary5{
-    background-color: var(--secondary5);
-}
-
-.text5{
-    background-color: var(--text5);
-}
 
 
 .bodycontainer {

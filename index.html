@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark" />
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/color.css">
+    <link rel="stylesheet" href="assets/css/color-class.css">
     <link rel="stylesheet" href="assets/css/mycss.css">
     <title>Document</title>
+    <script src="assets/js/darkmode.js" defer></script>
 </head>
 <body class="bodycontainer">
+    
     <header class="header">
         <nav>
             <ul class="navigation">
@@ -20,6 +24,42 @@
                 <li class="contact"><a href="#">Contact</a></li>
             </ul>
         </nav>
+        
+
+        <button class="btn">
+            <svg width="30" height="30" id="light-icon">
+              <circle cx="15" cy="15" r="6" fill="currentColor" />
+      
+              <line
+                id="ray"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                x1="15"
+                y1="1"
+                x2="15"
+                y2="4"
+              ></line>
+      
+              <use href="#ray" transform="rotate(45 15 15)" />
+              <use href="#ray" transform="rotate(90 15 15)" />
+              <use href="#ray" transform="rotate(135 15 15)" />
+              <use href="#ray" transform="rotate(180 15 15)" />
+              <use href="#ray" transform="rotate(225 15 15)" />
+              <use href="#ray" transform="rotate(270 15 15)" />
+              <use href="#ray" transform="rotate(315 15 15)" />
+            </svg>
+            <svg width="30" height="30" id="dark-icon">
+              <path
+                fill="currentColor"
+                d="
+                M 23, 5
+                A 12 12 0 1 0 23, 25
+                A 12 12 0 0 1 23, 5"
+              />
+            </svg>
+          </button>
+
     </header>
 
     <main class="main">
@@ -138,5 +178,7 @@
             <li>Contact</li>
         </ul>
     </footer>
+    
 </body>
+
 </html>
