@@ -34,6 +34,24 @@ h1{
     margin-bottom: 1rem;
 }
 
+.img-400{
+    width: 100%;
+    max-width:400px;
+    object-fit: contain;
+}
+
+.img-300{
+    width: 100%;
+    max-width: 300px;
+    object-fit: contain;
+}
+
+.img-250{
+    width: 100%;
+    max-width: 250px;
+    object-fit: contain;
+}
+
 #darkmode-btn {
     padding: 0.5rem 1rem;
     margin: 0.5rem;
