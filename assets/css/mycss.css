@@ -123,12 +123,15 @@ nav>ul{
     display: grid;
     min-height: 5vh;
     max-height: 5vh;
-    grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "logo . home about services contact darkmode"
+    "logo . home about services contact cenik darkmode"
     ;
+}
 
+.cenik{
+    grid-area: cenik;
 }
 
 .darkmode{

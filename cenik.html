@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/color.css" />
+    <link rel="stylesheet" href="assets/css/color-class.css" />
+    <link rel="stylesheet" href="assets/css/mycss.css" />
+    <link rel="stylesheet" href="assets/css/datatables.css" />
+    <title>Ceník</title>
+    <script src="assets/js/darkmode.js" defer></script>
+    <script src="assets/js/jquery-3.7.1.min.js" defer></script>
+    <script src="assets/js/datatables.js" defer></script>
+  </head>
+  <body class="bodycontainer">
+    <header class="header">
+      <nav>
+        <ul class="navigation">
+          <li class="logo"><a href="index.html">DO (na)UČ SE!</a></li>
+          <li class="home"><a href="index.html">Domů</a></li>
+          <li class="about"><a href="onas.html">O nás</a></li>
+          <li class="services"><a href="kurzy.html">Kurzy</a></li>
+          <li class="contact"><a href="lektori.html">Lektoři</a></li>
+          <li class="cenik"><a href="cenik.html">Ceník</a></li>
+          <button class="darkmode" id="darkmode-btn">
+            <svg width="30" height="30" id="light-icon">
+              <circle cx="15" cy="15" r="6" fill="currentColor" />
+
+              <line
+                id="ray"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                x1="15"
+                y1="1"
+                x2="15"
+                y2="4"
+              ></line>
+
+              <use href="#ray" transform="rotate(45 15 15)" />
+              <use href="#ray" transform="rotate(90 15 15)" />
+              <use href="#ray" transform="rotate(135 15 15)" />
+              <use href="#ray" transform="rotate(180 15 15)" />
+              <use href="#ray" transform="rotate(225 15 15)" />
+              <use href="#ray" transform="rotate(270 15 15)" />
+              <use href="#ray" transform="rotate(315 15 15)" />
+            </svg>
+            <svg width="30" height="30" id="dark-icon">
+              <path
+                fill="currentColor"
+                d="
+                        M 23, 5
+                        A 12 12 0 1 0 23, 25
+                        A 12 12 0 0 1 23, 5"
+              />
+            </svg>
+          </button>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+        <table id="example" class="display" style="width:100%" data-page-length='25'>
+            <thead>
+                <tr>
+                    <th>Název kurzu</th>
+                    <th>Město</th>
+                    <th>Začátek kurzu</th>
+                    <th>Vyučující</th>
+                    <th>Počet volných míst</th>
+                    <th>Cena</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Příprava ke státní maturitě z matematiky I.</td>
+                    <td>Liberec</td>
+                    <td>2.10.2024</td>
+                    <td>Mgr. Ondřej Zlámal</td>
+                    <td>5</td>
+                    <td>2500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Příprava ke státní maturitě z matematiky II.</td>
+                    <td>Liberec</td>
+                    <td>3.10.2024</td>
+                    <td>Mgr. Ondřej Zlámal</td>
+                    <td>7</td>
+                    <td>2500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Konverzační kurz němčiny pro pokročilé</td>
+                    <td>Liberec</td>
+                    <td>6.10.2024</td>
+                    <td>Mgr. Denisa Rydlinská</td>
+                    <td>15</td>
+                    <td>1500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Příprava na DELE a DELF jazykové zkoušky</td>
+                    <td>Jablonec</td>
+                    <td>7.10.2024</td>
+                    <td>Ing. José Suarez</td>
+                    <td>10</td>
+                    <td>5000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Česká historie v kontextu</td>
+                    <td>Jablonec</td>
+                    <td>8.10.2024</td>
+                    <td>Ing. Beáta Vychodilová, Ph.D.</td>
+                    <td>18</td>
+                    <td>1000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Pokročilá fyzika pro maturanty</td>
+                    <td>Liberec</td>
+                    <td>10.10.2024</td>
+                    <td>Mgr. Ondřej Zlámal</td>
+                    <td>8</td>
+                    <td>3000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Úvod do biochemie</td>
+                    <td>Jablonec</td>
+                    <td>17.10.2024</td>
+                    <td>Mgr. Jan Novák</td>
+                    <td>10</td>
+                    <td>4000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Konverzační kurz francouzštiny pro středně pokročilé</td>
+                    <td>Jablonec</td>
+                    <td>22.10.2024</td>
+                    <td>Ing. José Suarez</td>
+                    <td>15</td>
+                    <td>3000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Intenzivní kurz chemie pro maturanty</td>
+                    <td>Liberec</td>
+                    <td>25.10.2024</td>
+                    <td>Mgr. Jan Novák</td>
+                    <td>6</td>
+                    <td>4500 Kč</td>
+                </tr>
+
+                <tr>
+                    <td>Pokročilá fyzika pro maturanty</td>
+                    <td>Liberec</td>
+                    <td>10.10.2024</td>
+                    <td>Mgr. Ondřej Zlámal</td>
+                    <td>8</td>
+                    <td>3000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Intenzivní kurz španělštiny pro začátečníky</td>
+                    <td>Jablonec</td>
+                    <td>12.10.2024</td>
+                    <td>Ing. José Suarez</td>
+                    <td>12</td>
+                    <td>3500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Angličtina pro mírně pokročilé</td>
+                    <td>Liberec</td>
+                    <td>15.10.2024</td>
+                    <td>Bc. Denisa Rydlinská</td>
+                    <td>20</td>
+                    <td>2000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Úvod do biochemie</td>
+                    <td>Jablonec</td>
+                    <td>17.10.2024</td>
+                    <td>Mgr. Jan Novák</td>
+                    <td>10</td>
+                    <td>4000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Literární kroužek: Česká literatura 20. století</td>
+                    <td>Liberec</td>
+                    <td>20.10.2024</td>
+                    <td>Ing. Beáta Vychodilová, Ph.D.</td>
+                    <td>12</td>
+                    <td>1200 Kč</td>
+                </tr>
+                <tr>
+                    <td>Matematika pro vysokoškoláky</td>
+                    <td>Liberec</td>
+                    <td>27.10.2024</td>
+                    <td>Mgr. Ondřej Zlámal</td>
+                    <td>9</td>
+                    <td>3000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Intenzivní kurz angličtiny pro začátečníky</td>
+                    <td>Liberec</td>
+                    <td>30.10.2024</td>
+                    <td>Bc. Denisa Rydlinská</td>
+                    <td>15</td>
+                    <td>2500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Francouzská literatura: 19. a 20. století</td>
+                    <td>Jablonec</td>
+                    <td>3.11.2024</td>
+                    <td>Ing. José Suarez</td>
+                    <td>10</td>
+                    <td>2000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Dějiny evropského umění</td>
+                    <td>Jablonec</td>
+                    <td>5.11.2024</td>
+                    <td>Ing. Beáta Vychodilová, Ph.D.</td>
+                    <td>12</td>
+                    <td>1800 Kč</td>
+                </tr>
+                <tr>
+                    <td>Moderní fyzika: kvantová mechanika</td>
+                    <td>Liberec</td>
+                    <td>7.11.2024</td>
+                    <td>Mgr. Ondřej Zlámal</td>
+                    <td>6</td>
+                    <td>3500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Španělština pro pokročilé</td>
+                    <td>Jablonec</td>
+                    <td>9.11.2024</td>
+                    <td>Ing. José Suarez</td>
+                    <td>14</td>
+                    <td>3000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Intenzivní kurz němčiny pro začátečníky</td>
+                    <td>Liberec</td>
+                    <td>12.11.2024</td>
+                    <td>Bc. Denisa Rydlinská</td>
+                    <td>18</td>
+                    <td>2500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Vývoj českého jazyka</td>
+                    <td>Liberec</td>
+                    <td>15.11.2024</td>
+                    <td>Ing. Beáta Vychodilová, Ph.D.</td>
+                    <td>10</td>
+                    <td>1500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Biologie člověka: základy</td>
+                    <td>Jablonec</td>
+                    <td>17.11.2024</td>
+                    <td>Mgr. Jan Novák</td>
+                    <td>12</td>
+                    <td>2000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Konverzační kurz angličtiny pro pokročilé</td>
+                    <td>Liberec</td>
+                    <td>20.11.2024</td>
+                    <td>Bc. Denisa Rydlinská</td>
+                    <td>16</td>
+                    <td>1500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Intenzivní kurz matematiky pro přijímací zkoušky na VŠ</td>
+                    <td>Liberec</td>
+                    <td>23.11.2024</td>
+                    <td>Mgr. Ondřej Zlámal</td>
+                    <td>10</td>
+                    <td>4000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Španělská kultura a historie</td>
+                    <td>Jablonec</td>
+                    <td>25.11.2024</td>
+                    <td>Ing. José Suarez</td>
+                    <td>8</td>
+                    <td>2500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Středověká česká literatura</td>
+                    <td>Liberec</td>
+                    <td>27.11.2024</td>
+                    <td>Ing. Beáta Vychodilová, Ph.D.</td>
+                    <td>14</td>
+                    <td>1500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Základy chemie pro středoškoláky</td>
+                    <td>Jablonec</td>
+                    <td>29.11.2024</td>
+                    <td>Mgr. Jan Novák</td>
+                    <td>18</td>
+                    <td>2500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Intenzivní kurz francouzštiny pro začátečníky</td>
+                    <td>Liberec</td>
+                    <td>2.12.2024</td>
+                    <td>Ing. José Suarez</td>
+                    <td>20</td>
+                    <td>3000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Česká gramatika pro cizince</td>
+                    <td>Liberec</td>
+                    <td>5.12.2024</td>
+                    <td>Ing. Beáta Vychodilová, Ph.D.</td>
+                    <td>15</td>
+                    <td>2000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Angličtina pro děti</td>
+                    <td>Liberec</td>
+                    <td>7.12.2024</td>
+                    <td>Bc. Denisa Rydlinská</td>
+                    <td>12</td>
+                    <td>1200 Kč</td>
+                </tr>
+                <tr>
+                    <td>Příprava na zkoušku z biologie pro VŠ</td>
+                    <td>Jablonec</td>
+                    <td>9.12.2024</td>
+                    <td>Mgr. Jan Novák</td>
+                    <td>10</td>
+                    <td>3500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Pokročilý kurz němčiny pro obchodníky</td>
+                    <td>Liberec</td>
+                    <td>12.12.2024</td>
+                    <td>Bc. Denisa Rydlinská</td>
+                    <td>10</td>
+                    <td>3000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Intenzivní kurz matematiky pro maturanty</td>
+                    <td>Liberec</td>
+                    <td>15.12.2024</td>
+                    <td>Mgr. Ondřej Zlámal</td>
+                    <td>5</td>
+                    <td>4000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Španělská konverzace pro pokročilé</td>
+                    <td>Jablonec</td>
+                    <td>17.12.2024</td>
+                    <td>Ing. José Suarez</td>
+                    <td>18</td>
+                    <td>2000 Kč</td>
+                </tr>
+                <tr>
+                    <td>České dějiny: renesance a baroko</td>
+                    <td>Liberec</td>
+                    <td>19.12.2024</td>
+                    <td>Ing. Beáta Vychodilová, Ph.D.</td>
+                    <td>14</td>
+                    <td>1500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Základy mikrobiologie</td>
+                    <td>Jablonec</td>
+                    <td>21.12.2024</td>
+                    <td>Mgr. Jan Novák</td>
+                    <td>10</td>
+                    <td>3000 Kč</td>
+                </tr>
+
+                <tr>
+                    <td>Úvod do programování v Pythonu</td>
+                    <td>Liberec</td>
+                    <td>5.9.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>10</td>
+                    <td>3000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Webové programování v JavaScriptu</td>
+                    <td>Liberec</td>
+                    <td>10.9.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>12</td>
+                    <td>3500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Základy programování v Javě</td>
+                    <td>Jablonec</td>
+                    <td>15.9.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>8</td>
+                    <td>3200 Kč</td>
+                </tr>
+                <tr>
+                    <td>Pokročilé techniky programování v C++</td>
+                    <td>Jablonec</td>
+                    <td>20.9.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>6</td>
+                    <td>4000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Úvod do ekonomie</td>
+                    <td>Liberec</td>
+                    <td>25.9.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>15</td>
+                    <td>2000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Makroekonomie pro začátečníky</td>
+                    <td>Jablonec</td>
+                    <td>1.10.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>18</td>
+                    <td>2500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Mikroekonomie: základní principy</td>
+                    <td>Liberec</td>
+                    <td>5.10.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>12</td>
+                    <td>2200 Kč</td>
+                </tr>
+                <tr>
+                    <td>Programování mobilních aplikací</td>
+                    <td>Jablonec</td>
+                    <td>10.10.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>8</td>
+                    <td>3500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Analýza dat v Pythonu</td>
+                    <td>Liberec</td>
+                    <td>15.10.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>10</td>
+                    <td>3000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Finanční trhy a investice</td>
+                    <td>Jablonec</td>
+                    <td>20.10.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>14</td>
+                    <td>2800 Kč</td>
+                </tr>
+                <tr>
+                    <td>Programování webových aplikací v PHP</td>
+                    <td>Liberec</td>
+                    <td>25.10.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>9</td>
+                    <td>3300 Kč</td>
+                </tr>
+                <tr>
+                    <td>Úvod do databázových systémů</td>
+                    <td>Jablonec</td>
+                    <td>30.10.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>12</td>
+                    <td>3000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Ekonometrie pro pokročilé</td>
+                    <td>Liberec</td>
+                    <td>5.11.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>10</td>
+                    <td>3500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Data Science v Pythonu</td>
+                    <td>Jablonec</td>
+                    <td>10.11.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>8</td>
+                    <td>4000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Hospodářská politika a její dopady</td>
+                    <td>Liberec</td>
+                    <td>15.11.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>15</td>
+                    <td>2000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Programování v R pro analýzu dat</td>
+                    <td>Jablonec</td>
+                    <td>20.11.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>10</td>
+                    <td>3200 Kč</td>
+                </tr>
+                <tr>
+                    <td>Finanční analýza a plánování</td>
+                    <td>Liberec</td>
+                    <td>25.11.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>14</td>
+                    <td>2800 Kč</td>
+                </tr>
+                <tr>
+                    <td>Pokročilé databázové techniky</td>
+                    <td>Jablonec</td>
+                    <td>30.11.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>8</td>
+                    <td>3500 Kč</td>
+                </tr>
+                <tr>
+                    <td>Úvod do machine learning</td>
+                    <td>Liberec</td>
+                    <td>5.12.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>10</td>
+                    <td>4000 Kč</td>
+                </tr>
+                <tr>
+                    <td>Ekonomické teorie v praxi</td>
+                    <td>Jablonec</td>
+                    <td>10.12.2024</td>
+                    <td>Ing. Daniel Veselý</td>
+                    <td>12</td>
+                    <td>3000 Kč</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Název kurzu</th>
+                    <th>Město</th>
+                    <th>Začátek kurzu</th>
+                    <th>Vyučující</th>
+                    <th>Počet volných míst</th>
+                    <th>Cena</th>
+                </tr>
+            </tfoot>
+        </table>
+
+    </main>
+
+    <footer class="footer card text5">
+      <h5>Socials</h5>
+      <img src="/assets/img/placeholder/25.png" alt="fb" />
+      <img src="/assets/img/placeholder/25.png" alt="ig" />
+      <img src="/assets/img/placeholder/25.png" alt="twitter" />
+      <img src="/assets/img/placeholder/25.png" alt="linkedin" />
+      <p>&copy; 2020</p>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+  </body>
+</html>

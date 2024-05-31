@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/color.css" />
+    <link rel="stylesheet" href="assets/css/color-class.css" />
+    <link rel="stylesheet" href="assets/css/mycss.css" />
+    <link rel="stylesheet" href="assets/css/kurzy.css" />
+    <title>Kurzy</title>
+    <script src="assets/js/darkmode.js" defer></script>
+    <script src="assets/js/validation.js" defer></script>
+  </head>
+  <body class="bodycontainer">
+    <header class="header">
+      <nav>
+        <ul class="navigation">
+          <li class="logo"><a href="index.html">DO (na)UČ SE!</a></li>
+          <li class="home"><a href="index.html">Domů</a></li>
+          <li class="about"><a href="onas.html">O nás</a></li>
+          <li class="services"><a href="kurzy.html">Kurzy</a></li>
+          <li class="contact"><a href="lektori.html">Lektoři</a></li>
+          <li class="cenik"><a href="cenik.html">Ceník</a></li>
+
+          <button class="darkmode" id="darkmode-btn">
+            <svg width="30" height="30" id="light-icon">
+              <circle cx="15" cy="15" r="6" fill="currentColor" />
+
+              <line
+                id="ray"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                x1="15"
+                y1="1"
+                x2="15"
+                y2="4"
+              ></line>
+
+              <use href="#ray" transform="rotate(45 15 15)" />
+              <use href="#ray" transform="rotate(90 15 15)" />
+              <use href="#ray" transform="rotate(135 15 15)" />
+              <use href="#ray" transform="rotate(180 15 15)" />
+              <use href="#ray" transform="rotate(225 15 15)" />
+              <use href="#ray" transform="rotate(270 15 15)" />
+              <use href="#ray" transform="rotate(315 15 15)" />
+            </svg>
+            <svg width="30" height="30" id="dark-icon">
+              <path
+                fill="currentColor"
+                d="
+                        M 23, 5
+                        A 12 12 0 1 0 23, 25
+                        A 12 12 0 0 1 23, 5"
+              />
+            </svg>
+          </button>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+        <form class="row g-3">
+            <div class="col-md-4">
+              <label for="validationDefault01" class="form-label">Jméno</label>
+              <input type="text" class="form-control" id="validationDefault01" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault02" class="form-label">Přijmení</label>
+              <input type="text" class="form-control" id="validationDefault02" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault06" class="form-label">Email</label>
+                <input type="email" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+            </div>
+            <div class="col-md-6">
+              <label for="validationDefault03" class="form-label">Telefonní číslo</label>
+              <input type="tel" class="form-control" id="validationDefault03" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12" required>
+            </div>
+            <div class="col-md-3">
+              <label for="validationDefault04" class="form-label">Kurz</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Vyber...</option>
+                <option>Příprava ke státní maturitě z matematiky I.</option>
+                <option>Příprava ke státní maturitě z matematiky II.</option>
+                <option>Konverzační kurz němčiny pro pokročilé</option>
+                <option>Příprava na DELE a DELF jazykové zkoušky</option>
+                <option>Česká historie v kontextuy</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Souhlasím s podmínkami služby a GDPR
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Odeslat formulář</button>
+            </div>
+          </form>
+    </main>
+
+    <footer class="footer card text5">
+      <h5>Socials</h5>
+      <img src="/assets/img/placeholder/25.png" alt="fb" />
+      <img src="/assets/img/placeholder/25.png" alt="ig" />
+      <img src="/assets/img/placeholder/25.png" alt="twitter" />
+      <img src="/assets/img/placeholder/25.png" alt="linkedin" />
+      <p>&copy; 2020</p>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+  </body>
+</html>
