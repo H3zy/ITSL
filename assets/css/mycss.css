@@ -130,6 +130,18 @@ nav>ul{
     ;
 }
 
+.img-25{
+    width: 100%;
+    max-width: 25px;
+    object-fit: contain;
+}
+
+.img-50{
+    width: 100%;
+    max-width: 50px;
+    object-fit: contain;
+}
+
 .img-100{
     width: 100%;
     max-width: 100px;
