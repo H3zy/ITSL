@@ -39,7 +39,7 @@ btn.addEventListener("click", function () {
       darkIcon.setAttribute("display", "inline-block");
       localStorage.setItem("theme", "dark");
     }
-  // zmeni aktualni theme na opacny 
+    // zmeni aktualni theme na opacny
   } else if (currentTheme == "dark") {
     document.body.classList.add("light-theme");
     lightIcon.setAttribute("display", "inline-block");

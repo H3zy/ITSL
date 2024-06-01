@@ -11,41 +11,41 @@ const odpoved4 = document.getElementById("odpoved4");
 const odpoved5 = document.getElementById("odpoved5");
 
 otazka1.addEventListener("click", function () {
-    if (odpoved1.style.display === "none" || odpoved1.style.display === "") {
-        odpoved1.style.display = "block";
-    } else {
-        odpoved1.style.display = "none";
-    }
+  if (odpoved1.style.display === "none" || odpoved1.style.display === "") {
+    odpoved1.style.display = "block";
+  } else {
+    odpoved1.style.display = "none";
+  }
 });
 
 otazka2.addEventListener("click", function () {
-    if (odpoved2.style.display === "none" || odpoved2.style.display === "") {
-        odpoved2.style.display = "block";
-    } else {
-        odpoved2.style.display = "none";
-    }
+  if (odpoved2.style.display === "none" || odpoved2.style.display === "") {
+    odpoved2.style.display = "block";
+  } else {
+    odpoved2.style.display = "none";
+  }
 });
 
-otazka3.addEventListener("click", function () { 
-    if (odpoved3.style.display === "none" || odpoved3.style.display === "") {
-        odpoved3.style.display = "block";
-    } else {
-        odpoved3.style.display = "none";
-    }
+otazka3.addEventListener("click", function () {
+  if (odpoved3.style.display === "none" || odpoved3.style.display === "") {
+    odpoved3.style.display = "block";
+  } else {
+    odpoved3.style.display = "none";
+  }
 });
 
 otazka4.addEventListener("click", function () {
-    if (odpoved4.style.display === "none" || odpoved4.style.display === "") {
-        odpoved4.style.display = "block";
-    } else {
-        odpoved4.style.display = "none";
-    }
+  if (odpoved4.style.display === "none" || odpoved4.style.display === "") {
+    odpoved4.style.display = "block";
+  } else {
+    odpoved4.style.display = "none";
+  }
 });
 
 otazka5.addEventListener("click", function () {
-    if (odpoved5.style.display === "none" || odpoved5.style.display === "") {
-        odpoved5.style.display = "block";
-    } else {
-        odpoved5.style.display = "none";
-    }
+  if (odpoved5.style.display === "none" || odpoved5.style.display === "") {
+    odpoved5.style.display = "block";
+  } else {
+    odpoved5.style.display = "none";
+  }
 });

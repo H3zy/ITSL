@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/font.css" />
     <link rel="stylesheet" href="assets/css/color.css" />
@@ -22,7 +36,14 @@
     <header class="header">
       <nav>
         <ul class="navigation">
-          <li class="logo "><a href="index.html"><img class="img-100" src="assets/img/logo/png/donaucse-bez-textu-ctverec.png" alt=""></a></li>
+          <li class="logo">
+            <a href="index.html"
+              ><img
+                class="img-100"
+                src="assets/img/logo/png/donaucse-bez-textu-ctverec.png"
+                alt=""
+            /></a>
+          </li>
           <li class="home"><a href="index.html">Domů</a></li>
           <li class="about"><a href="onas.html">O nás</a></li>
           <li class="services"><a href="kurzy.html">Kurzy</a></li>
@@ -65,50 +86,64 @@
       </nav>
     </header>
 
-
     <main class="main">
-        <form id="fake-submit">
-            <h1>Přihláška na kurz</h1>
-            <div>
-              <label for="validationDefault01" class="form-label">Jméno</label>
-              <input type="text" class="form-control" id="jmeno" required>
-            </div>
-            <div>
-              <label for="validationDefault02" class="form-label">Přijmení</label>
-              <input type="text" class="form-control" id="prijmeni" required>
-            </div>
-            <div>
-              <label for="validationDefault06" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="inputGroupPrepend2" required>
-            </div>
-            <div>
-              <label for="validationDefault03" class="form-label">Telefonní číslo</label>
-              <input type="tel" class="form-control" id="telefon" required>
-            </div>
-            <div>
-              <label for="validationDefault04" class="form-label">Kurz</label>
-              <select class="form-select" id="kurz" required>
-                <option selected disabled value="">Vyber...</option>
-                <option>Příprava ke státní maturitě z matematiky I.</option>
-                <option>Příprava ke státní maturitě z matematiky II.</option>
-                <option>Konverzační kurz němčiny pro pokročilé</option>
-                <option>Příprava na DELE a DELF jazykové zkoušky</option>
-                <option>Česká historie v kontextuy</option>
-              </select>
-            </div>
-            <div class="span">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="souhlas" required>
-                <label class="form-check-label" for="invalidCheck2">
-                  Souhlasím s podmínkami služby a GDPR
-                </label>
-              </div>
-              
-            </div>
-            <div class="span">
-              <button class="form-tlacitko primary" type="submit">Odeslat formulář</button>
-            </div>          
-          </form>
+      <form id="fake-submit">
+        <h1>Přihláška na kurz</h1>
+        <div>
+          <label for="validationDefault01" class="form-label">Jméno</label>
+          <input type="text" class="form-control" id="jmeno" required />
+        </div>
+        <div>
+          <label for="validationDefault02" class="form-label">Přijmení</label>
+          <input type="text" class="form-control" id="prijmeni" required />
+        </div>
+        <div>
+          <label for="validationDefault06" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="inputGroupPrepend2"
+            required
+          />
+        </div>
+        <div>
+          <label for="validationDefault03" class="form-label"
+            >Telefonní číslo</label
+          >
+          <input type="tel" class="form-control" id="telefon" required />
+        </div>
+        <div>
+          <label for="validationDefault04" class="form-label">Kurz</label>
+          <select class="form-select" id="kurz" required>
+            <option selected disabled value="">Vyber...</option>
+            <option>Příprava ke státní maturitě z matematiky I.</option>
+            <option>Příprava ke státní maturitě z matematiky II.</option>
+            <option>Konverzační kurz němčiny pro pokročilé</option>
+            <option>Příprava na DELE a DELF jazykové zkoušky</option>
+            <option>Česká historie v kontextuy</option>
+          </select>
+        </div>
+        <div class="span">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="souhlas"
+              required
+            />
+            <label class="form-check-label" for="invalidCheck2">
+              Souhlasím s podmínkami služby a GDPR
+            </label>
+          </div>
+        </div>
+        <div class="span">
+          <button class="form-tlacitko primary" type="submit">
+            Odeslat formulář
+          </button>
+        </div>
+      </form>
     </main>
 
     <footer class="footer card text5">
@@ -117,7 +152,10 @@
       <img class="img-25" src="/assets/icons/instagram.svg" alt="ig" />
       <img class="img-25" src="/assets/icons/twitter-x.svg" alt="twitter" />
       <img class="img-25" src="/assets/icons/linkedin.svg" alt="linkedin" />
-      <p>&copy; 2024 Zpracováno v rámci předmětu ITSL - Daniel Hanzlík a Jan Štefl</p>
+      <p>
+        &copy; 2024 Zpracováno v rámci předmětu ITSL - Daniel Hanzlík a Jan
+        Štefl
+      </p>
     </footer>
   </body>
 </html>
