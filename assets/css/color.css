@@ -198,7 +198,7 @@
     --static2: #0f0f0f;
     --static5: rgb(24, 172, 122);
     --static6: rgba(0, 0, 0, 0.05);
-    --static7: rgba(0, 0, 0, 0.1);
+    --static7: rgba(225, 225, 225, 0.74);
     --static8: rgba(0, 0, 0, 0.05);
     --static9: rgba(0, 0, 0, 0.3);
     --static10: rgba(225, 225, 225);
@@ -406,7 +406,7 @@
   --static2: #0f0f0f;
   --static5: rgb(24, 172, 122);
   --static6: rgba(0, 0, 0, 0.05);
-  --static7: rgba(0, 0, 0, 0.1);
+  --static7: rgba(225, 225, 225, 0.74);
   --static8: rgba(0, 0, 0, 0.05);
   --static9: rgba(0, 0, 0, 0.3);
   --static10: rgba(225, 225, 225);

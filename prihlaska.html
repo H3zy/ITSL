@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/color.css" />
     <link rel="stylesheet" href="assets/css/color-class.css" />
     <link rel="stylesheet" href="assets/css/mycss.css" />
-    <link rel="stylesheet" href="assets/css/kurzy.css" />
+    <link rel="stylesheet" href="assets/css/prihlaska.css" />
     <title>Kurzy</title>
     <script src="assets/js/darkmode.js" defer></script>
     <script src="assets/js/fake-submit.js" defer></script>
@@ -22,13 +22,12 @@
     <header class="header">
       <nav>
         <ul class="navigation">
-          <li class="logo "><a href="index.html"><img class="img-100" src="assets/img/logo/png/donaucse-bez-textu.png" alt=""></a></li>
+          <li class="logo "><a href="index.html"><img class="img-100" src="assets/img/logo/png/donaucse-bez-textu-ctverec.png" alt=""></a></li>
           <li class="home"><a href="index.html">Domů</a></li>
           <li class="about"><a href="onas.html">O nás</a></li>
           <li class="services"><a href="kurzy.html">Kurzy</a></li>
           <li class="contact"><a href="lektori.html">Lektoři</a></li>
           <li class="cenik"><a href="cenik.html">Ceník</a></li>
-
           <button class="darkmode" id="darkmode-btn">
             <svg width="30" height="30" id="light-icon">
               <circle cx="15" cy="15" r="6" fill="currentColor" />
@@ -66,25 +65,27 @@
       </nav>
     </header>
 
+
     <main class="main">
-        <form class="row g-3" id="fake-submit">
-            <div class="col-md-4">
+        <form id="fake-submit">
+            <h1>Přihláška na kurz</h1>
+            <div>
               <label for="validationDefault01" class="form-label">Jméno</label>
               <input type="text" class="form-control" id="jmeno" required>
             </div>
-            <div class="col-md-4">
+            <div>
               <label for="validationDefault02" class="form-label">Přijmení</label>
               <input type="text" class="form-control" id="prijmeni" required>
             </div>
-            <div class="col-md-4">
+            <div>
               <label for="validationDefault06" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" aria-describedby="inputGroupPrepend2" required>
             </div>
-            <div class="col-md-6">
+            <div>
               <label for="validationDefault03" class="form-label">Telefonní číslo</label>
               <input type="tel" class="form-control" id="telefon" required>
             </div>
-            <div class="col-md-3">
+            <div>
               <label for="validationDefault04" class="form-label">Kurz</label>
               <select class="form-select" id="kurz" required>
                 <option selected disabled value="">Vyber...</option>
@@ -95,17 +96,18 @@
                 <option>Česká historie v kontextuy</option>
               </select>
             </div>
-            <div class="col-12">
+            <div class="span">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="souhlas" required>
                 <label class="form-check-label" for="invalidCheck2">
                   Souhlasím s podmínkami služby a GDPR
                 </label>
               </div>
+              
             </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Odeslat formulář</button>
-            </div>
+            <div class="span">
+              <button class="form-tlacitko primary" type="submit">Odeslat formulář</button>
+            </div>          
           </form>
     </main>
 
@@ -116,12 +118,6 @@
       <img class="img-25" src="/assets/icons/twitter-x.svg" alt="twitter" />
       <img class="img-25" src="/assets/icons/linkedin.svg" alt="linkedin" />
       <p>&copy; 2024 Zpracováno v rámci předmětu ITSL - Daniel Hanzlík a Jan Štefl</p>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Contact</li>
-      </ul>
     </footer>
   </body>
 </html>
