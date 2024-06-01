@@ -67,6 +67,12 @@ h1 {
   object-fit: contain;
 }
 
+.img-350 {
+  width: 100%;
+  max-width: 350px;
+  object-fit: contain;
+}
+
 .portret-300 {
   width: 100%;
   max-width: 300px;

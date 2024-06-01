@@ -5,3 +5,7 @@
   column-gap: 2rem;
   row-gap: 2rem;
 }
+
+.kurzy>div{
+  height: 100%;
+}
